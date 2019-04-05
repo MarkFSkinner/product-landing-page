@@ -152,15 +152,15 @@ ul {
     width: 100%;
 }
 
-/*Added to style in HTML to pass test
 #footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}*/
+    padding-top: 2.5rem; /*40px*/
+    padding-bottom: 2.5rem; /*40px*/
+    width: 100%;
+}
 
 #footer a {
     padding-right: 0.9375rem; /*15px*/
@@ -172,12 +172,11 @@ ul {
     text-decoration: underline;
 }
 
-/*****Added to style in HTML to pass test*******
 @media screen and (min-width: 1037px) {
     .model-container {
-        min-height: 450px;
+        min-height: 28.125rem; /*450px*/
     }
-}*/
+}
 
 @media screen and (max-width: 823px) {
     .top-nav a {
