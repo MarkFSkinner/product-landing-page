@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Product Landing Page</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <style type="text/css">
+        /*These styles added here to pass test cases for freecodecamp. Not being read from styles.css*/
+        @media screen and (min-width: 1037px) {
+            .tv-model {
+                min-height: 450px;
+            }
+        }
+        #footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            width: 100%;
+        }
+    </style>
+    <body>
+        <header id="header">
+            <div id="logo">
+                <a href="https://www.vizio.com/en-ca/" target="_blank">
+                    <img id="header-img" src="https://cdn-ssl.vizio.com/skin/frontend/enterprise/vizio_2014/assets/img/vizio-logo-large.jpg" alt="Vizio Logo">
+                </a>
+            </div>
+            <nav id="nav-bar" class="top-nav">
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </a><br><hr id="top-line" class="line hidden">
+                <a class="nav-link top-link" href="#features">Features</a><hr class="line hidden">
+                <a class="nav-link" href="#vision">Our Vision</a><hr class="line hidden">
+                <a class="nav-link" href="#models">Models</a><hr class="line hidden">
+            </nav>
+        </header>
+        <div id="container">
+            <main id="main">
+                <hr>
+                <section id="sign-up">
+                    <h2>All New 4K Smart TVs!</h2>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <label id="email-label" for="email">Please enter email address below to sign up for promotional notifications:</label><br>
+                        <input id="email" type="email" name="email" placeholder="Enter Email Address" required><br>
+                        <input id="submit" class="btn" type="submit" value="Submit">
+                    </form>
+                </section>
+                <hr>
+                <section id="features">
+                    <ul>
+                        <li>4K Ultra HD</li>
+                        <li>High Dynamic Range on Select Models</li>
+                        <li>Sizes 24"-75"</li>
+                        <li>Smart TV with SmartCast OS</li>
+                        <li>Google Chromecast Built‑in</li>
+                        <li>Voice Control from Amazon Alexa and Google Assistant-enabled Devices</li>
+                        <li>Variety of Models to Suit Your Individual Needs</li>
+                    </ul>
+                </section>
+                <hr>
+                <section id="vision">
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/l4MMZcCw6s4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </section>
+                <hr>
+                <section id="models">
+                    <div class="tv-model">
+                        <a href="https://www.vizio.com/en-ca/p-series-quantum" target="_blank">
+                            <img src="https://cdn-ssl.vizio.com/skin/frontend/enterprise/vizio_2014/assets/img/overview/overview-cards/p-series-quantum.png?ver=1529610172" alt="P-Series Quantum TV">
+                        </a>
+                        <h3>P-Series Quantum</h3>
+                        <h4>Premier Smart TV</h4>
+                        <p>Size 65” | Coming Soon</p>
+                        <ul>
+                            <li>4K Ultra HD</li>
+                            <li>Dolby Vision™ HDR</li>
+                            <li>Quantum Dot Technology</li>
+                            <li>Quantum Color Spectrum™</li>
+                            <li>Active Full Array Max™</li>
+                        </ul>
+                    </div>
+                    <div class="tv-model">
+                        <a href="https://www.vizio.com/en-ca/p-series" target="_blank">
+                            <img src="https://cdn-ssl.vizio.com/skin/frontend/enterprise/vizio_2014/assets/img/overview/overview-cards/p-series.png?ver=1529610172" alt="P-Series TV">
+                        </a>
+                        <h3>P-Series</h3>
+                        <h4>Performance Smart TV</h4>
+                        <p>Sizes 55” - 75”</p>
+                        <ul>
+                            <li>4K Ultra HD</li>
+                            <li>Dolby Vision™ HDR</li>
+                            <li>Ultra Color Spectrum®</li>
+                            <li>Active Full Array Pro™</li>
+                        </ul>
+                    </div>
+                    <div class="tv-model">
+                        <a href="https://www.vizio.com/en-ca/m-series" target="_blank">
+                            <img src="https://cdn-ssl.vizio.com/skin/frontend/enterprise/vizio_2014_CA/assets/img/overview/overview-cards/m-series.png?ver=1529610172" alt="M-Series TV">
+                        </a>
+                        <h3>M-Series</h3>
+                        <h4>Modern Smart TV</h4>
+                        <p>Sizes 55” - 70”</p>
+                        <ul>
+                            <li>4K Ultra HD</li>
+                            <li>Dolby Vision™ HDR</li>
+                            <li>Active Full Array Plus™</li>
+                        </ul>
+                    </div>
+                    <div class="tv-model">
+                        <a href="https://www.vizio.com/en-ca/e-series" target="_blank">
+                            <img src="https://cdn-ssl.vizio.com/skin/frontend/enterprise/vizio_2014/assets/img/overview/overview-cards/e-series.png?ver=1529610172" alt="E-Series TV">
+                        </a>
+                        <h3>E-Series</h3>
+                        <h4>Essential Smart TV</h4>
+                        <p>Sizes 43” - 75”</p>
+                        <ul>
+                            <li>4K Ultra HD</li>
+                            <li>Dolby Vision™ HDR</li>
+                            <li>Active Full Array™</li>
+                        </ul>
+                    </div>
+                    <div class="tv-model">
+                        <a href="https://www.vizio.com/en-ca/d-series" target="_blank">
+                            <img src="https://cdn-ssl.vizio.com/skin/frontend/enterprise/vizio_2014/assets/img/overview/overview-cards/d-series.png?ver=1529610172" alt="D-Series TV">
+                        </a>
+                        <h3>D-Series</h3>
+                        <h4>Dependable Smart TV</h4>
+                        <p>Sizes 24” - 70”</p>
+                        <ul>
+                            <li>4K Ultra HD</li>
+                            <li>High Dynamic Range</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+            <hr>
+            <footer id="footer">
+                <a href="https://www.vizio.com/en-ca/privacy" target="_blank">Privacy Policy</a>
+                <a href="https://www.vizio.com/en-ca/terms" target="_blank">Terms of Service</a>
+                <a href="https://support.vizio.com/s/contact-us?language=en_US" target="_blank">Contact Us</a>
+            </footer>
+        </div>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script><!--
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>-->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
